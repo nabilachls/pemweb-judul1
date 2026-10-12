@@ -1,12 +1,10 @@
-# Editor directories and files
+# Editor & IDE
 .vscode/
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-# Operating System Files
+*.swp
+# OS metadata
 .DS_Store
 Thumbs.db
-desktop.ini
-# Log files
+# Logs & build cache
 *.log
+.cache/
