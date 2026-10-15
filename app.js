@@ -24,7 +24,7 @@ let dataMahasiswa = [
 ];
 
 // 2. Elemen Dom Utama.
-
+const alertBox = document.getElementById("alert-box");
 
 /*
 // Seleksi Elemen Formulir Tambah Mahasiswa
@@ -38,7 +38,15 @@ const inputEmail = document.getElementById("email");
 
 
 // 3. Fungsi Menampilkan Notifikasi Alert Interaktif (Percobaan 3-1).
+function showAlert(message, type = "succes") {
+    if (!alertBox) return;
+    alertBox.textContent = message;
+    alertBox.className = `alert-box alert-${type} show`
 
+    setTimeout(() => {
+        alertBox.className = 'alert-box'
+    }, 4000)
+}
 
 
 // 4. Fungsi Pembaruan Counter Statistik Real-Time.
@@ -126,5 +134,8 @@ if (inputSearch) {
 // Inisialisasi saat DOM selesai dimuat
 
 document.addEventListener(
+    "DOMContentLoaded", function () {
+        showAlert("Selamat datang Di Aplikasi SIMA", "info")
+    }
     
 )
