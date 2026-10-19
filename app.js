@@ -149,7 +149,7 @@ function validateForm(npm, nama, prodi, angkatan, email) {
     }
 
     return { isValid: true, message: ""};
-
+} 
 
 // 7. Event Handling Tambah Data Tanpa Reload (Percobaan 3-4).
 if (formTambah) {
